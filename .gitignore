@@ -1,10 +1,15 @@
 # Dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.js
+.yarn/install-state.gz
 
 # Testing
 /coverage
+
+# Next.js
+/.next/
+/out/
 
 # Production
 /build
@@ -12,25 +17,34 @@
 
 # Misc
 .DS_Store
+*.pem
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env
 
-# Logs
+# Debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# Local env files
+.env*.local
+
+# Vercel
+.vercel
 
 # TypeScript
 *.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build files
+bun.lockb
+.cache/
